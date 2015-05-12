@@ -26,8 +26,8 @@ The project's source files are `font-awesome.css` (actually, the stock
 FontAwesome source file) and `font-awesome-xtn.css`.
 
 Make whatever changes you want to the two source files, and then type `make`.
-This will compile them into `fa-x.css` and `fa-x.min.css` (the second being a
-compressed version of the first).
+This will compile them into `fa-x.css` and `fa-x.min.css` (the file second
+being a compressed version of the first).
 
 You can now reference `fa-x.css` or `fa-x.min.css` in your HTML document's head
 section, and start playing with the widget set:
@@ -43,7 +43,7 @@ easy to understand.
 Authors
 -------
 
-Fa-x was created by Pantelis Panayiotou <p.panayiotou@gmail.com>.
+Fa-x was created by Pantelis Panayiotou - <p.panayiotou@gmail.com>.
 
 License
 -------

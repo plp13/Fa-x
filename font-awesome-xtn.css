@@ -1,0 +1,691 @@
+/* FontAwesome Extensions
+ * CSS stylesheets */
+
+/* Set these colours to match your page's palette */
+@icon: #333333;				/* active icons               */
+@icon-inactive: #a4a4a4;		/* inactive icons             */
+@separator: #666666;			/* separators                 */
+@emblem: #ffffff;			/* plain emblems              */
+@emblem-inactive: #a4a4a4;		/* inactive emblems           */
+@red: #d41e1e;				/* red icons and emblems      */
+@orange: #f58535;			/* orange icons and emblems   */
+@green: #4ab309;			/* green icons and emblems    */
+@blue: #2c82dd;				/* blue icons and emblems     */
+@button-bg: #ffffff;			/* button background          */
+@button-border: #666666;		/* button border              */ 
+@button-hover: #ffffff;			/* button foreground on hover */
+@button-hover-bg: #f8ae7a;		/* button background on hover */
+@button-hover-hi: #f58535;		/* button highlight on hover  */
+@button-hover-border: #666666;		/* button border on hover     */
+@button-inactive-bg: #ffffff;		/* inactive button background */
+@button-inactive-border: #a4a4a4;	/* inactive button border     */
+@menu-bg: #ffffff;			/* menu background            */
+@menu-border: #666666;			/* menu border                */
+@menu-strip: #f7e4d7;			/* menu icon shader strip     */
+@menu-hover: #ffffff;			/* button foreground on hover */
+@menu-hover-bg: #f8ae7a;		/* button background on hover */
+@menu-hover-hi: #f58535;		/* button highlight on hover  */
+@menu-width: 14em;			/* menu size                  */
+@input-bg: #ffffff;			/* input background           */
+@input-border: #666666;			/* input border               */
+@input-icon: #a4a4a4;			/* input icon                 */
+@input-text: #333333;			/* input text                 */
+@input-focus-bg: #f7e4d7;		/* focused input background   */
+@input-focus-border: #666666;		/* focused input border       */
+@table-bg: #ffffff;			/* table background           */
+@table-bg2: #f7e4d7;			/* table secondary background */
+@table-border: #666666;			/* table border               */
+@table-th: #ffffff;			/* table header foreground    */
+@table-th-bg: #f8ae7a;			/* table header background    */
+@table-th-hi: #f58535;			/* table header highlight     */
+@table-th-border: #666666;		/* table header border        */
+@shadow-light: #ffffff;			/* light shadows              */
+@shadow-dark: #999999;			/* dark shadows               */
+@text: #333333;				/* page text                  */
+@link: #3333ff;				/* page links                 */
+@bg: #f6f6f6;				/* page background            */
+@hr: #666666;				/* horizontal rule            */
+
+body {
+	color: @text;
+	background-color: @bg;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+a, a:visited, a:hover, a:active {
+	color: @link;
+	text-decoration: none;
+	outline: none;
+}
+
+hr {
+	border-top: none;
+	border-bottom: 0.071em solid @hr;
+}
+
+/* icon */
+
+.fax {
+	color: @icon;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	margin: 0em;
+	padding: 0em;
+	border: none;
+	text-decoration: none;
+}
+
+.fax:focus {
+	outline: none;
+}
+
+.fax-inactive {
+	color: @icon-inactive;
+}
+
+/* text beside icon */
+
+.fax-text {
+	color: @icon;
+	font-family: sans-serif;
+	font-size: 0.786em;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	vertical-align: 0.112em;
+	padding-left: 0.5em;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.fax-inactive .fax-text,
+.fax-inactive.fax-text {
+	color: @icon-inactive;
+}
+
+/* icon separator */
+
+.fax-sep {
+	&:extend(.fax);
+	border-right: 0.071em solid @separator;
+}
+
+/* icon emblem */
+
+.fax-emblem {
+	position: relative;
+	vertical-align: baseline;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	margin-left: -0.5em;
+	margin-right: 0em;
+	color: @emblem;
+	font-size: 75%;
+	text-shadow: 0.071em 0.071em 0.071em @icon;
+}
+
+sup.fax-emblem {
+	vertical-align: super;
+}
+
+.fa-lg.fax-emblem, .fa-lg .fax-emblem {
+	font-size: 69%;
+}
+
+.fa-2x.fax-emblem, .fa-2x .fax-emblem,
+.fa-3x.fax-emblem, .fa-3x .fax-emblem,
+.fa-4x.fax-emblem, .fa-4x .fax-emblem,
+.fa-5x.fax-emblem, .fa-5x .fax-emblem {
+	font-size: 50%;
+}
+
+.fax-inactive .fax-emblem,
+.fax-inactive.fax-emblem {
+	color: @icon-inactive;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+}
+
+/* colours */
+
+.fax-red {
+	color: @red;
+}
+
+.fax-orange {
+	color: @orange;
+}
+
+.fax-green {
+	color: @green;
+}
+
+.fax-blue {
+	color: @blue;
+}
+
+/* button */
+
+.fax-button {
+	display: table;
+	background-color: @button-bg;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	transition: background-color 0.2s ease-out;
+	min-width: 1.714em;
+	border: 0.071em solid @button-border;
+	border-radius: 0.214em;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+}
+
+.fax-button.fax-inactive {
+	background-color: @button-inactive-bg;
+	border-color: @button-inactive-border;
+	cursor: not-allowed;
+}
+
+.fax-button .fa,
+.fax-button .fax-sep {
+	display: table-cell;
+	white-space: nowrap;
+	padding-top: 0.214em;
+	padding-bottom: 0.214em;
+	padding-left: 0.357em;
+	padding-right: 0.357em;
+}
+
+.fax-button.fax-inactive .fa,
+.fax-button.fax-inactive .fax-sep {
+	color: @icon-inactive;
+	border-color: @icon-inactive;
+}
+
+.fax-button:not(.fax-inactive):hover {
+	background-color: @button-hover-bg;
+	border-color: @button-hover-border;
+	box-shadow: inset 0.035em 0.035em 0.035em rgba(255, 255, 255, 0.2), inset -0.035em -0.035em 0.035em rgba(0, 0, 0, 0.1), inset 0em -1em 1em @button-hover-hi;
+}
+
+.fax-button:not(.fax-inactive):hover .fa,
+.fax-button:not(.fax-inactive):hover .fax-text,
+.fax-button:not(.fax-inactive):hover .fax-emblem,
+.fax-button:not(.fax-inactive):hover .fax-sep {
+	color: @button-hover;
+	border-color: @button-hover-border;
+	text-shadow: 0em 0em 0.071em @shadow-dark;
+}
+
+.fax-button:focus {
+	outline: none;
+}
+
+/* button group */
+
+.fax-group {
+	display: table;
+}
+
+.fax-group > .fax-button {
+	display: table-cell;
+	border-left-style: none;
+	border-right-style: none;
+	border-radius: 0em;
+}
+
+.fax-group > .fax-button.fax-inactive {
+	border-color: @button-border;
+}
+
+.fax-group > .fax-button:not(.fax-inactive):first-child:hover,
+.fax-group > .fax-button:not(.fax-inactive):last-child:hover {
+	border-color: @button-hover-border;
+}
+
+.fax-group > .fax-button:first-child {
+	border-left-style: solid;
+	border-top-left-radius: 0.214em;
+	border-bottom-left-radius: 0.214em;
+}
+
+.fax-group > .fax-button:last-child {
+	border-right-style: solid;
+	border-top-right-radius: 0.214em;
+	border-bottom-right-radius: 0.214em;
+}
+
+.fax-group > .fax-sep {
+	display: table-cell;
+}
+
+
+/* flat buttons modifier */
+
+.fax-flat .fax-button, .fax-flat.fax-button,
+.fax-flat .fax-button.fax-inactive, .fax-flat.fax-button.fax-inactive {
+	background-color: @bg;
+	border-color: @bg;
+	border-left-style: solid;
+	border-right-style: solid;
+}
+
+.fax-flat.fax-group > .fax-sep,
+.fax-flat .fax-group > .fax-sep {
+	border-right: none;
+}
+
+/* toolbar */
+
+.fax-toolbar {
+	display: table;
+	border-spacing: 0.143em 0em;
+	margin-left: -0.143em;
+}
+
+.fax-toolbar > .fax-button,
+.fax-toolbar > .fax-group,
+.fax-toolbar > .fax-sep {
+	display: table-cell;
+	border-spacing: 0em 0em;
+}
+
+/* horizontal menubar */
+
+.fax-menubar {
+	display: block;
+	background-color: @menu-strip;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	height: 1.5em;
+	margin: 0em;
+	padding: 0em;
+	z-index: +1;
+	line-height: normal;
+	list-style-type: none;
+	border-top: 0.071em solid @menu-border;
+	border-bottom: 0.071em solid @menu-border;
+}
+
+.fax-menubar > li {
+	position: relative;
+	display: block;
+	float: left;
+	height: 1.5em;
+	transition: background-color 0.2s ease-out;
+	cursor: pointer;
+}
+
+.fax-menubar > li > a {
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+}
+
+.fax-menubar > li .fa {
+	width: 1.143em;
+	padding-left: 0.571em;
+	vertical-align: 0em;
+	white-space: nowrap;
+}
+
+.fax-menubar > li .fax-text {
+	display: inline-block;
+	padding-top: 0.429em;
+	padding-bottom: 0.429em;
+	padding-left: 0.571em;
+	padding-right: 0.571em;
+	font-weight: 900;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.fax-menubar > li .fax-text:nth-child(2) {
+	padding-left: 0em;
+}
+
+.fax-menubar > li.fax-inactive,
+.fax-menubar > li.fax-inactive .fa,
+.fax-menubar > li.fax-inactive .fax-text,
+.fax-menubar > li.fax-inactive .fax-emblem {
+	color: @icon-inactive;
+	cursor: not-allowed;
+}
+
+.fax-menubar > li:not(.fax-inactive):hover {
+	background-color: @menu-hover-bg;
+	box-shadow: inset 0em 0.035em 0.035em rgba(255, 255, 255, 0.2), inset 0em -0.035em 0.035em rgba(0, 0, 0, 0.1), inset 0em -1em 1em @menu-hover-hi;
+}
+
+.fax-menubar > li:not(.fax-inactive):hover > .fa,
+.fax-menubar > li:not(.fax-inactive):hover > .fa > .fax-emblem,
+.fax-menubar > li:not(.fax-inactive):hover > .fax-text,
+.fax-menubar > li:not(.fax-inactive):hover > a > .fa,
+.fax-menubar > li:not(.fax-inactive):hover > a > .fa > .fax-emblem,
+.fax-menubar > li:not(.fax-inactive):hover > a > .fax-text {
+	color: @menu-hover;
+	text-shadow: 0em 0em 0.071em @shadow-dark
+}
+
+.fax-menubar > li > .fax-menu {
+	position: absolute;
+	visibility: hidden;
+	top: 1.5em;
+	left: 0em;
+	border-top-left-radius: 0em;
+	border-top-right-radius: 0em;
+}
+
+.fax-menubar > li > .fax-menu > li:first-child {
+	border-top-left-radius: 0em;
+	border-top-right-radius: 0em;
+}
+
+.fax-menubar > li:not(.fax-inactive):hover > .fax-menu {
+	visibility: visible;
+}
+
+/* menu */
+
+.fax-menu {
+	position: relative;
+	display: inline-block;
+	background-color: @menu-bg;
+	background: repeating-linear-gradient(to right, @menu-strip, @menu-strip 1.786em, @menu-bg 0em, @menu-bg); 
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	box-shadow: 0.071em 0.071em 0.143em @shadow-dark;
+	width: @menu-width;
+	margin: 0em;
+	padding: 0em;
+	z-index: +1;
+	list-style-type: none;
+	border-radius: 0.214em;
+}
+
+.fax-menu > li {
+	transition: background-color 0.2s ease-out;
+	cursor: pointer;
+	border-left: 0.071em solid @menu-border;
+	border-right: 0.071em solid @menu-border;
+}
+
+.fax-menu > li:first-child {
+	border-top: 0.071em solid @menu-border;
+	border-top-left-radius: 0.214em;
+	border-top-right-radius: 0.214em;
+}
+
+.fax-menu > li:last-child {
+	border-bottom: 0.071em solid @menu-border;
+	border-bottom-left-radius: 0.214em;
+	border-bottom-right-radius: 0.214em;
+}
+
+.fax-menu > li > a {
+	display: block;
+	text-decoration: none;
+	outline: none;
+}
+
+.fax-menu > li .fa {
+	width: 1.143em;
+	padding: 0.286em;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.fax-menu > li .fa:nth-child(3) {
+	float: right;
+	text-align: right;
+}
+
+.fax-menu > li .fax-text {
+	padding: 0.286em;
+	white-space: nowrap;
+}
+
+.fax-menu > li .fax-text:nth-child(2) {
+	padding-left: 0.286em;
+}
+
+.fax-menu > li.fax-inactive,
+.fax-menu > li.fax-inactive .fa,
+.fax-menu > li.fax-inactive .fax-text,
+.fax-menu > li.fax-inactive .fax-emblem {
+	color: @icon-inactive;
+	cursor: not-allowed;
+}
+
+.fax-menu > li:not(.fax-inactive):hover {
+	background-color: @menu-hover-bg;
+	box-shadow: inset 0em 0.035em 0.035em rgba(255, 255, 255, 0.2), inset 0em -0.035em 0.035em rgba(0, 0, 0, 0.1), inset 0em -1em 1em @menu-hover-hi;
+}
+
+.fax-menu > li:not(.fax-inactive):hover > .fa,
+.fax-menu > li:not(.fax-inactive):hover > .fa > .fax-emblem,
+.fax-menu > li:not(.fax-inactive):hover > .fax-text,
+.fax-menu > li:not(.fax-inactive):hover > a > .fa,
+.fax-menu > li:not(.fax-inactive):hover > a > .fa > .fax-emblem,
+.fax-menu > li:not(.fax-inactive):hover > a > .fax-text {
+	color: @menu-hover;
+	text-shadow: 0em 0em 0.071em @shadow-dark
+}
+
+.fax-menu > li > .fax-menu {
+	position: absolute;
+	visibility: hidden;
+	left: @menu-width;
+	margin-top: 0.214em;
+	margin-left: -0.214em;
+}
+
+.fax-menu > li:not(.fax-inactive):hover > .fax-menu {
+	visibility: visible;
+}
+
+/* form input */
+
+.fax-input {
+	white-space: nowrap;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.fax-input .fax-text {
+	display: inline-block;
+	padding-top: 0.5em;
+	padding-left: 0em;
+	width: 16em;
+	vertical-align: top;
+	font-weight: 900;
+	white-space: normal;
+	color: @input-text;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+}
+
+.fax-input .fa {
+	display: inline-block;
+	position: relative;
+	width: 1.143em;
+	margin-right: -1.571em;
+	text-align: center;
+	vertical-align: -0.071em;
+	color: @input-icon;
+}
+
+.fax-input fieldset {
+	margin: 0em;
+	padding: 0.571em;
+	font-family: inherit;
+	font-size: inherit;
+	border: 0.071em solid @input-border;
+	border-radius: 0.214em;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.fax-input legend {
+	padding-left: 0.182em;
+	padding-right: 0.182em;
+	border-left: 0.071em solid @input-border;
+	border-right: 0.071em solid @input-border;
+	color: @input-text;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	font-size: 0.786em;
+	font-weight: 900;
+}
+
+.fax-input input[type=text],
+.fax-input input[type=number],
+.fax-input input[type=email],
+.fax-input input[type=password] {
+	width: 20em;
+	height: 1.857em;
+	box-sizing: border-box;
+	padding: 0.143em;
+	padding-left: 1.571em;
+	color: @input-text;
+	background-color: @input-bg;
+	transition: background-color 0.2s ease-out;
+	font-family: inherit;
+	font-size: inherit;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	border: 0.071em solid @input-border;
+	border-radius: 0.214em;
+	box-shadow: 0em 0em 0.214em @shadow-light;
+	outline: none;
+}
+
+.fax-input input[type=text]:focus,
+.fax-input input[type=number]:focus,
+.fax-input input[type=email]:focus,
+.fax-input input[type=password]:focus {
+	background-color: @input-focus-bg;
+	border-color: @input-focus-border;
+	box-shadow: 0em 0em 0.214em @shadow-dark;
+}
+
+.fax-input select {
+	min-width: 20em;
+	height: 1.857em;
+	box-sizing: border-box;
+	margin-left: -0.143em;
+	padding: 0.143em;
+	color: @input-text;
+	background-color: @input-bg;
+	transition: background-color 0.2s ease-out;
+	font-family: inherit;
+	font-size: inherit;
+	vertical-align: middle;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	border: 0.071em solid @input-border;
+	border-radius: 0.214em;
+	outline: none;
+}
+
+.fax-input select:focus {
+	background-color: @input-focus-bg;
+	border-color: @input-focus-border;
+	box-shadow: 0em 0em 0.214em @shadow-dark;
+}
+
+.fax-input textarea {
+	width: 30em;
+	box-sizing: border-box;
+	height: 8em;
+	margin-left: -0.143em;
+	padding: 0.143em;
+	color: @input-text;
+	background-color: @input-bg;
+	transition: background-color 0.2s ease-out;
+	font-family: inherit;
+	font-size: inherit;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	border: 0.071em solid @input-border;
+	border-radius: 0.214em;
+	box-shadow: 0em 0em 0.214em @shadow-light;
+	outline: none;
+}
+
+.fax-input textarea:focus {
+	background-color: @input-focus-bg;
+	border-color: @input-focus-border;
+	box-shadow: 0em 0em 0.214em @shadow-dark;
+}
+
+.fax-input label {
+	display: inline-block;
+	height: 1.429em;
+	margin-left: -0.429em;
+	margin-right: 1.143em;
+	padding-top: 0.214em;
+	padding-bottom: 0.214em;
+	padding-left: 0.286em;
+	padding-right: 0.286em;
+	color: @input-text;
+	transition: background-color 0.2s ease-out;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	border-radius: 0.214em;
+}
+
+.fax-input label:hover {
+	background-color: @input-focus-bg;
+}
+
+.fax-input input[type=radio],
+.fax-input input[type=checkbox] {
+	margin: 0em;
+	margin-right: 0.429em;
+	vertical-align: -0.214em;
+	padding: 0em;
+	outline: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.fax-input input[type=radio],
+	.fax-input input[type=checkbox] {
+		vertical-align: -0.143em;
+	}
+}
+
+/* tables */
+
+.fax-table {
+	width: 100%;
+	margin: 0em;
+	padding: 0em;
+	background-color: @table-bg;
+	border: 0.071em solid @table-border;
+	border-radius: 0.214em;
+}
+
+.fax-table td {
+	padding: 0.214em;
+	text-shadow: 0em 0em 0.071em @shadow-light;
+	transition: background-color 0.2s ease-out;
+	white-space: nowrap;
+	border-radius: 0.214em;
+}
+
+.fax-table td.fax-toolbar {
+	padding-right: 2.857em;
+}
+
+.fax-table th {
+	&:extend(.fax-table td);
+	text-align: left;
+	color: @table-th;
+	background-color: @table-th-bg;
+	box-shadow: inset 0.035em 0.035em 0.035em rgba(255, 255, 255, 0.2), inset -0.035em -0.035em 0.035em rgba(0, 0, 0, 0.1), inset 0em -1em 1em @table-th-hi;
+	text-shadow: 0em 0em 0.071em @shadow-dark;
+	border: 0.071em solid @table-th-border;
+	border-radius: 0.214em;
+}
+
+.fax-table tr:hover td:not(.fax-toolbar) {
+	background-color: @table-bg2;
+}
+

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>FontAwesome Extensions Demo</title>
+		<link rel="stylesheet" href="fa-x.css">
+		<meta charset="utf-8">
+	</head>
+
+	<body style="background-color: #f6f6f6;">
+
+		<h1>FontAwesome Extensions Demo</h1>
+
+		<form class="fax-input">
+		<p>
+			<span class="fax-text">Widget size</span>
+			<label><input type="radio" name="demoSize" value="" checked onClick="document.getElementsByTagName('body')[0].className = '';">normal</label>
+			<label><input type="radio" name="demoSize" value="fa-lg" onClick="document.getElementsByTagName('body')[0].className = 'fa-lg';">large</label>
+			<label><input type="radio" name="demoSize" value="fa-2x" onClick="document.getElementsByTagName('body')[0].className = 'fa-2x';">2x</label>
+			<label><input type="radio" name="demoSize" value="fa-3x" onClick="document.getElementsByTagName('body')[0].className = 'fa-3x';">3x</label>
+			<label><input type="radio" name="demoSize" value="fa-4x" onClick="document.getElementsByTagName('body')[0].className = 'fa-4x';">4x</label>
+			<label><input type="radio" name="demoSize" value="fa-5x" onClick="document.getElementsByTagName('body')[0].className = 'fa-5x';">5x</label>
+		</p>
+		</form>
+
+		<hr>
+
+		<h3>Icons</h3>
+		<p><span class="fa fa-home fax"><span class="fax-text">standard icon</span></span></p>
+		<p><span class="fa fa-trash-o fax fax-red"><span class="fax-text">red icon</span></span></p>
+		<p><span class="fa fa-mail-forward fax fax-orange"><span class="fax-text">orange icon</span></span></p>
+		<p><span class="fa fa-send fax fax-green"><span class="fax-text">green icon</span></span></p>
+		<p><span class="fa fa-mail-reply fax fax-blue"><span class="fax-text">blue icon</span></span></p>
+		<p><span class="fa fa-user fax"><sub class="fa-plus fax-emblem"></sub><span class="fax-text">icon with emblem</span></span></p>
+		<p><span class="fa fa-calendar fax"><sup class="fa-lock fax-emblem"></sup><span class="fax-text">icon with emblem on top</span></span></p>
+		<p><span class="fa fa-file-pdf-o fax"><sub class="fa-times fax-emblem fax-red"></sub><span class="fax-text">icon with red emblem</span></span></p>
+		<p><span class="fa fa-envelope-o fax"><sub class="fa-mail-forward fax-emblem fax-orange"></sub><span class="fax-text">icon with orange emblem</span></span></p>
+		<p><span class="fa fa-file-image-o fax"><sub class="fa-check fax-emblem fax-green"></sub><span class="fax-text">icon with green emblem</span></span></p>
+		<p><span class="fa fa-envelope-o fax"><sub class="fa-mail-reply fax-emblem fax-blue"></sub><span class="fax-text">icon with blue emblem</span></span></p>
+		<p><span class="fa fa-edit fax fax-inactive"><span class="fax-text">inactive icon</span></span></p>
+		<p><span class="fa fa-print fax fax-inactive"><sub class="fa-question-circle fax-emblem"></sub><span class="fax-text">inactive icon with emblem</span></span></p>
+		<h3>Buttons</h3>
+		<p><a class="fax-button" href="javascript:alert('Button clicked!');"><span class="fa fa-folder-open-o fax"><span class="fax-text">button with icon</span></span></a></p>
+		<p><span class="fax-button fax-inactive"><span class="fa fa-paste fax"><span class="fax-text">inactive button with icon</span></span></span></p>
+		<p><a class="fax-button" href="javascript:alert('Button clicked!');"><span class="fa fa-folder-o fax"><sub class="fa-lock fax-emblem fax-red"></sub><span class="fax-text">button with icon and emblem</span></span></a></p>
+		<p><span class="fax-group">
+			<a class="fax-button" href="javascript:alert('Group button 1 clicked!');"><span class="fa fa-usd fax"><span class="fax-text">first group button</span></span></a>
+			<a class="fax-button" href="javascript:alert('Group button 2 clicked!');"><span class="fa fa-gbp fax"><span class="fax-text">second group button</span></span></a>
+			<span class="fax-sep"></span>
+			<span class="fax-button fax-inactive"><span class="fa fa-jpy fax"><span class="fax-text">third group button</span></span></span>
+			<a class="fax-button" href="javascript:alert('Group button 4 clicked!');"><span class="fa fa-btc fax"><span class="fax-text">fourth group button</span></span></a>
+		</span></p>
+		<p><span class="fax-button">
+			<a class="fa fa-file-word-o fax" href="javascript:alert('Main area clicked!');"><span class="fax-text">composite button</span></a>
+			<span class="fax-sep"></span>
+			<a class="fa fa-caret-down fax" href="javascript:alert('Dropdown area clicked!');"></a>
+		</span></p>
+		<p><span class="fax-button fax-inactive">
+			<span class="fa fa-file-excel-o fax"><span class="fax-text">inactive composite button</span></span>
+			<span class="fax-sep"></span>
+			<span class="fa fa-caret-down fax"></span>
+		</span></p>
+		<p><span class="fax-toolbar">
+			<span class="fax-group">
+				<a class="fax-button" href="javascript:alert('Undo button clicked!');"><span class="fa fa-undo fax"></span></a>
+				<a class="fax-button" href="javascript:alert('Redo button clicked!');"><span class="fa fa-repeat fax"></span></a>
+			</span>
+			<span class="fax-sep"></span>
+			<a class="fax-button" href="javascript:alert('Cut button clicked!');"><span class="fa fa-cut fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Copy button clicked!');"><span class="fa fa-copy fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Paste button clicked!');"><span class="fa fa-paste fax"></span></a>
+			<span class="fax-sep"></span>
+			<a class="fax-button" href="javascript:alert('Bold button clicked!');"><span class="fa fa-bold fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Italic button clicked!');"><span class="fa fa-italic fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Unerline button clicked!');"><span class="fa fa-underline fax"></span></a>
+			<span class="fax-button">
+				<a class="fa fa-font fax" href="javascript:alert('Font button clicked!');"><span class="fax-text">sans-serif</span></a>
+				<a class="fa fa-caret-down fax" href="javascript:alert('Font button dropdown clicked!');"></a>
+			</span>
+			<span class="fax-sep"></span>
+			<span class="fax-group">
+				<a class="fax-button" href="javascript:alert('Ordered list button clicked!');"><span class="fa fa-list-ol fax"></span></a>
+				<a class="fax-button" href="javascript:alert('Unordered list button clicked!');"><span class="fa fa-list-ul fax"></span></a>
+				<span class="fax-sep"></span>
+				<a class="fax-button" href="javascript:alert('Indent button clicked!');"><span class="fa fa-indent fax"></span></a>
+				<a class="fax-button" href="javascript:alert('Outdent button clicked!');"><span class="fa fa-outdent fax"></span></a>
+			</span>
+			<a class="fax-button" href="javascript:alert('Table button clicked!');"><span class="fa fa-table fax"></span></a>
+			<span class="fax-sep"></span>
+			<a class="fax-button" href="javascript:alert('Save & exit button clicked!');"><span class="fa fa-save fax"><span class="fa-times fax-emblem fax-red"></span><span class="fax-text">Save & exit</span></span></a>
+			<a class="fax-button" href="javascript:alert('Cancel button clicked!');"><span class="fa fa-times fax fax-red"><span class="fax-text">Cancel</span></span></a>
+		</span></p>
+		<h3>Buttons (flat)</h3>
+		<p><a class="fax-button fax-flat" href="javascript:alert('Button clicked!');"><span class="fa fa-folder-open-o fax"><span class="fax-text">button with icon</span></span></a></p>
+		<p><span class="fax-button fax-flat fax-inactive"><span class="fa fa-paste fax"><span class="fax-text">inactive button with icon</span></span></span></p>
+		<p><a class="fax-button fax-flat" href="javascript:alert('Button clicked!');"><span class="fa fa-folder-o fax"><sub class="fa-lock fax-emblem fax-red"></sub><span class="fax-text">button with icon and emblem</span></span></a></p>
+		<p><span class="fax-group fax-flat">
+			<a class="fax-button" href="javascript:alert('Group button 1 clicked!');"><span class="fa fa-usd fax"><span class="fax-text">first group button</span></span></a>
+			<a class="fax-button" href="javascript:alert('Group button 2 clicked!');"><span class="fa fa-gbp fax"><span class="fax-text">second group button</span></span></a>
+			<span class="fax-sep"></span>
+			<span class="fax-button fax-inactive"><span class="fa fa-jpy fax"><span class="fax-text">third group button</span></span></span>
+			<a class="fax-button" href="javascript:alert('Group button 4 clicked!');"><span class="fa fa-btc fax"><span class="fax-text">fourth group button</span></span></a>
+		</span></p>
+		<p><span class="fax-button fax-flat">
+			<a class="fa fa-file-word-o fax" href="javascript:alert('Main area clicked!');"><span class="fax-text">composite button</span></a>
+			<span class="fax-sep"></span>
+			<a class="fa fa-caret-down fax" href="javascript:alert('Dropdown area clicked!');"></a>
+		</span></p>
+		<p><span class="fax-button fax-flat fax-inactive">
+			<span class="fa fa-file-excel-o fax"><span class="fax-text">inactive composite button</span></span>
+			<span class="fax-sep"></span>
+			<span class="fa fa-caret-down fax"></span>
+		</span></p>
+		<p><span class="fax-toolbar fax-flat">
+			<span class="fax-group">
+				<a class="fax-button" href="javascript:alert('Undo button clicked!');"><span class="fa fa-undo fax"></span></a>
+				<a class="fax-button" href="javascript:alert('Redo button clicked!');"><span class="fa fa-repeat fax"></span></a>
+			</span>
+			<span class="fax-sep"></span>
+			<a class="fax-button" href="javascript:alert('Cut button clicked!');"><span class="fa fa-cut fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Copy button clicked!');"><span class="fa fa-copy fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Paste button clicked!');"><span class="fa fa-paste fax"></span></a>
+			<span class="fax-sep"></span>
+			<a class="fax-button" href="javascript:alert('Bold button clicked!');"><span class="fa fa-bold fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Italic button clicked!');"><span class="fa fa-italic fax"></span></a>
+			<a class="fax-button" href="javascript:alert('Unerline button clicked!');"><span class="fa fa-underline fax"></span></a>
+			<span class="fax-button">
+				<a class="fa fa-font fax" href="javascript:alert('Font button clicked!');"><span class="fax-text">sans-serif</span></a>
+				<a class="fa fa-caret-down fax" href="javascript:alert('Font button dropdown clicked!');"></a>
+			</span>
+			<span class="fax-sep"></span>
+			<span class="fax-group">
+				<a class="fax-button" href="javascript:alert('Ordered list button clicked!');"><span class="fa fa-list-ol fax"></span></a>
+				<a class="fax-button" href="javascript:alert('Unordered list button clicked!');"><span class="fa fa-list-ul fax"></span></a>
+				<span class="fax-sep"></span>
+				<a class="fax-button" href="javascript:alert('Indent button clicked!');"><span class="fa fa-indent fax"></span></a>
+				<a class="fax-button" href="javascript:alert('Outdent button clicked!');"><span class="fa fa-outdent fax"></span></a>
+			</span>
+			<a class="fax-button" href="javascript:alert('Table button clicked!');"><span class="fa fa-table fax"></span></a>
+			<span class="fax-sep"></span>
+			<a class="fax-button" href="javascript:alert('Save & exit button clicked!');"><span class="fa fa-save fax"><span class="fa-times fax-emblem fax-red"></span><span class="fax-text">Save & exit</span></span></a>
+			<a class="fax-button" href="javascript:alert('Cancel button clicked!');"><span class="fa fa-times fax fax-red"><span class="fax-text">Cancel</span></span></a>
+		</span></p>
+		<h3>Menus</h3>
+		<p><ul class="fax-menu">
+			<li><a href="javascript:alert('Menu entry 1 clicked!');"><span class="fa fa-heartbeat fax"></span><span class="fax fax-text">First menu entry</span></a></li>
+			<li>
+				<span class="fa fa-stethoscope fax"></span><span class="fax fax-text">Second menu entry</span><span class="fa fa-angle-right fax"></span>
+				<ul class="fax-menu">
+					<li><a href="javascript:alert('Sub-menu entry 1 clicked!');"><span class="fa fa-hospital-o fax"></span><span class="fax fax-text">First sub-menu entry</span></a></li>
+					<li>
+						<span class="fa fa-user-md fax"></span><span class="fax fax-text">Second sub-menu entry</span><span class="fa fa-angle-right fax"></span>
+						<ul class="fax-menu">
+							<li><a href="javascript:alert('Third level menu entry 1 clicked!');"><span class="fa fa-taxi fax"></span><span class="fax fax-text">Third level menu entry 1</span></a></li>
+							<li><a href="javascript:alert('Third level menu entry 2 clicked!');"><span class="fa fa-train fax"></span><span class="fax fax-text">Third level menu entry 2</span></a></li>
+							<li><a href="javascript:alert('Third level menu entry 3 clicked!');"><span class="fa fa-ship fax"></span><span class="fax fax-text">Third level menu entry 3</span></a></li>
+							<li class="fax-inactive"><span class="fa fa-plane fax"></span><span class="fax fax-text">Third level menu entry 4</span></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="javascript:alert('Menu entry 3 clicked!');"><span class="fa fa-ambulance fax"></span><span class="fax fax-text">Third menu entry</span></a></li>
+			<li class="fax-inactive"><span class="fa fa-wheelchair fax"></span><span class="fax fax-text">Fourth menu entry</span></li>
+			<li><a href="javascript:alert('Menu entry 5 clicked!');"><span class="fa fa-medkit fax"></span><span class="fax fax-text">Fifth menu entry</span></a></li>
+		</ul></p>
+		<p><ul class="fax-menubar">
+			<li>
+				<span class="fa fa-apple fax"></span><span class="fax fax-text">Fa-x</span>
+				<ul class="fax-menu">
+					<li><a href="javascript:alert('Apple - About clicked!');"><span class="fa fa-info-circle fax"></span><span class="fax fax-text">About...</span></a></li>
+					<li><a href="javascript:alert('Apple - Quit clicked!');"><span class="fa fa-times-circle fax fax-red"></span><span class="fax fax-text">Quit</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="fax fax-text">File</span>
+				<ul class="fax-menu">
+					<li><a href="javascript:alert('File - New clicked!');"><span class="fa fa-file-o fax"></span><span class="fax fax-text">New</span></a></li>
+					<li><a href="javascript:alert('File - Open clicked!');"><span class="fa fa-folder-open-o fax"></span><span class="fax fax-text">Open...</span></a></li>
+					<li><a href="javascript:alert('File - Save clicked!');"><span class="fa fa-save fax"></span><span class="fax fax-text">Save</span></a></li>
+					<li><a href="javascript:alert('File - Save As clicked!');"><span class="fa fa-save fax"></span><span class="fax fax-text">Save As...</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="fax fax-text">Edit</span>
+				<ul class="fax-menu">
+					<li><a href="javascript:alert('Edit - Select All clicked!');"><span class="fa fax">&nbsp;</span><span class="fax fax-text">Select All</span></a></li>
+					<li><a href="javascript:alert('Edit - Select None clicked!');"><span class="fa fax">&nbsp;</span><span class="fax fax-text">Select None</span></a></li>
+					<li><a href="javascript:alert('Edit - Cut clicked!');"><span class="fa fa-cut fax"></span><span class="fax fax-text">Cut</span></a></li>
+					<li><a href="javascript:alert('Edit - Copy clicked!');"><span class="fa fa-copy fax"></span><span class="fax fax-text">Copy</span></a></li>
+					<li><a href="javascript:alert('Edit - Paste As clicked!');"><span class="fa fa-paste fax"></span><span class="fax fax-text">Paste</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="fax fax-text">View</span>
+				<ul class="fax-menu">
+					<li><a href="javascript:alert('View - Align to Grid clicked!');"><span class="fa fa-th fax"></span><span class="fax fax-text">Align to Grid</span></a></li>
+					<li>
+						<span class="fa fa-search fax"></span><span class="fax fax-text">Zoom</span><span class="fa fa-angle-right fax"></span>
+						<ul class="fax-menu">
+							<li><a href="javascript:alert('View - Zoom - Zoom In clicked!');"><span class="fa fa-search-plus fax"></span><span class="fax fax-text">Zoom In</span></a></li>
+							<li><a href="javascript:alert('View - Zoom - Zoom Out clicked!');"><span class="fa fa-search-minus fax"></span><span class="fax fax-text">Zoom Out</span></a></li>
+							<li><a href="javascript:alert('View - Zoom - Original Size clicked!');"><span class="fa fax">&nbsp;</span><span class="fax fax-text">Original Size</span></a></li>
+						</ul>
+					</li>
+					<li class="fax-disabled"><span class="fa fa-expand fax"></span><span class="fax fax-text">Full Screen</span></li>
+				</ul>
+			</li>
+			<li><a href="javascript:alert('Help clicked!');"><span class="fax fax-text">Help</span></a></li>
+		</ul></p>
+		<h3>Form Inputs</h3>
+		<form class="fax-input">
+		<fieldset><legend>Contact information</legend>
+		<p>
+			<span class="fax-text">Name and surname</span>
+			<span class="fa fa-user fax"></span>
+			<input type="text" name="name" placeholder="...">
+		</p>
+		<p>
+			<span class="fax-text">Landline phone no.</span>
+			<span class="fa fa-phone fax"></span>
+			<input type="number" name="landline" placeholder="...">
+		</p>
+		<p>
+			<span class="fax-text">Mobile phone number</span>
+			<span class="fa fa-mobile fax"></span>
+			<input type="number" name="mobile" placeholder="...">
+		</p>
+		<p>
+			<span class="fax-text">Email address</span>
+			<span class="fa fa-envelope fax"></span>
+			<input type="email" name="email" placeholder="...">
+		</p>
+		</fieldset>
+		<p>
+			<span class="fax-text">Choose a password</span>
+			<span class="fa fa-lock fax"></span>
+			<input type="password" name="password" placeholder="...">
+		</p>
+		<p>
+			<span class="fax-text">What do you grow?</span>
+			<select name="culture">
+				<option>Olive trees</option>
+				<option>Apple trees</option>
+				<option>Cereal grains</option>
+			</select>
+		</p>
+		<p>
+			<span class="fax-text">Your complains and suggestions</span>
+			<textarea name="message" placeholder="type your message here"></textarea>
+		</p>
+		<p>
+			<span class="fax-text">Would you like some chocolate?</span>
+			<label><input type="radio" name="chocolate" value="milk">milk chocolate</label>
+			<label><input type="radio" name="chocolate" value="dark">dark chocolate</label>
+			<label><input type="radio" name="chocolate" value="no">no, thanks!</label>
+		</p>
+		<p>
+			<span class="fax-text">Our newsletter (A.K.A. SPAM)</span>
+			<label><input type="checkbox" name="spam" value="milk">yes, I want you to fill my mailbox with junk, on a daily basis</label>
+		</p>
+		</form>
+		<h3>Tables</h3>
+		<table class="fax-table">
+			<tr>
+				<th>Name</th>
+				<th>Email address</th>
+				<th style="width: 1em;">Options</th>
+			</tr>
+			<tr>
+				<td>Nicos Anastasiades</td>
+				<td><a href="mailto:nicos@disy.org.cy">nicos@disy.org.cy</a></td>
+				<td class="fax-toolbar">
+					<a class="fax-button" href="javascript:alert('Edit clicked!');"><span class="fa fa-edit fax"><span class="fax-text">edit</span></span></a>
+					<a class="fax-button" href="javascript:alert('Delete clicked!');"><span class="fa fa-times-circle fax fax-red"><span class="fax-text fax-red">delete</span></span></a>
+				</td>
+			</tr>
+			<tr>
+				<td>Demetris Christofias</td>
+				<td><a href="mailto:syntrofos@akel.com.cy">syntrofos@akel.com.cy</a></td>
+				<td class="fax-toolbar">
+					<a class="fax-button" href="javascript:alert('Edit clicked!');"><span class="fa fa-edit fax"><span class="fax-text">edit</span></span></a>
+					<a class="fax-button" href="javascript:alert('Delete clicked!');"><span class="fa fa-times-circle fax fax-red"><span class="fax-text fax-red">delete</span></span></a>
+				</td>
+			</tr>
+			<tr>
+				<td>Tassos Papadopoulos</td>
+				<td><a href="mailto:tassos@heaven.otherlife.gov">tassos@heaven.otherlife.gov</a></td>
+				<td class="fax-toolbar">
+					<a class="fax-button" href="javascript:alert('Edit clicked!');"><span class="fa fa-edit fax"><span class="fax-text">edit</span></span></a>
+					<a class="fax-button" href="javascript:alert('Delete clicked!');"><span class="fa fa-times-circle fax fax-red"><span class="fax-text fax-red">delete</span></span></a>
+				</td>
+			</tr>
+			<tr>
+				<td>Glafkos Clerides</td>
+				<td><a href="mailto:kounelaki@heaven.otherlife.gov">kounelaki@heaven.otherlife.gov</a></td>
+				<td class="fax-toolbar">
+					<a class="fax-button" href="javascript:alert('Edit clicked!');"><span class="fa fa-edit fax"><span class="fax-text">edit</span></span></a>
+					<a class="fax-button" href="javascript:alert('Delete clicked!');"><span class="fa fa-times-circle fax fax-red"><span class="fax-text fax-red">delete</span></span></a>
+				</td>
+			</tr>
+			<tr>
+				<td>George Vassiliou</td>
+				<td><a href="mailto:master@bilderberg.org">master@bilderberg.org</a></td>
+				<td class="fax-toolbar">
+					<a class="fax-button" href="javascript:alert('Edit clicked!');"><span class="fa fa-edit fax"><span class="fax-text">edit</span></span></a>
+					<a class="fax-button" href="javascript:alert('Delete clicked!');"><span class="fa fa-times-circle fax fax-red"><span class="fax-text fax-red">delete</span></span></a>
+				</td>
+			</tr>
+			<tr>
+				<td>Spyros Kyprianou</td>
+				<td><a href="mailto:kontos@heaven.otherlife.gov">kontos@heaven.otherlife.gov</a></td>
+				<td class="fax-toolbar">
+					<a class="fax-button" href="javascript:alert('Edit clicked!');"><span class="fa fa-edit fax"><span class="fax-text">edit</span></span></a>
+					<a class="fax-button" href="javascript:alert('Delete clicked!');"><span class="fa fa-times-circle fax fax-red"><span class="fax-text fax-red">delete</span></span></a>
+				</td>
+			</tr>
+			<tr>
+				<td>Makarios III</td>
+				<td><a href="mailto:inmate4903@hell.otherlife.gov">inmate4903@hell.otherlife.gov</a></td>
+				<td class="fax-toolbar">
+					<a class="fax-button" href="javascript:alert('Edit clicked!');"><span class="fa fa-edit fax"><span class="fax-text">edit</span></span></a>
+					<a class="fax-button" href="javascript:alert('Delete clicked!');"><span class="fa fa-times-circle fax fax-red"><span class="fax-text fax-red">delete</span></span></a>
+				</td>
+			</tr>
+		</table>
+	
+	</body>
+
+</html>

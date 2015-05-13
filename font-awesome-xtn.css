@@ -46,6 +46,8 @@
 @bg: #f6f6f6;				/* page background            */
 @hr: #666666;				/* horizontal rule            */
 
+/* "global" elements */
+
 body {
 	color: @text;
 	background-color: @bg;
@@ -263,8 +265,8 @@ sup.fax-emblem {
 
 .fax-flat .fax-button, .fax-flat.fax-button,
 .fax-flat .fax-button.fax-inactive, .fax-flat.fax-button.fax-inactive {
-	background-color: @bg;
-	border-color: @bg;
+	background-color: inherit;
+	border-color: transparent;
 	border-left-style: solid;
 	border-right-style: solid;
 }
@@ -659,6 +661,7 @@ sup.fax-emblem {
 	padding: 0em;
 	background-color: @table-bg;
 	border: 0.071em solid @table-border;
+	border-spacing: 0.143em;
 	border-radius: 0.214em;
 }
 

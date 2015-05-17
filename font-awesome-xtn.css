@@ -621,12 +621,12 @@ sup.fax-emblem {
 .fax-input label {
 	display: inline-block;
 	height: 1.429em;
+	margin-top: -0.214em;
+	margin-bottom: 0em;
 	margin-left: -0.429em;
 	margin-right: 1.143em;
-	padding-top: 0.214em;
-	padding-bottom: 0.214em;
-	padding-left: 0.286em;
-	padding-right: 0.286em;
+	padding: 0.286em;
+	padding-top: 0.5em;
 	color: @input-text;
 	transition: background-color 0.2s ease-out;
 	text-shadow: 0em 0em 0.071em @shadow-light;
@@ -639,18 +639,33 @@ sup.fax-emblem {
 
 .fax-input input[type=radio],
 .fax-input input[type=checkbox] {
-	margin: 0em;
-	margin-right: 0.429em;
-	vertical-align: -0.214em;
-	padding: 0em;
-	outline: none;
+	display: none;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	.fax-input input[type=radio],
-	.fax-input input[type=checkbox] {
-		vertical-align: -0.143em;
-	}
+.fax-input input[type=radio] + label:before {
+	&:extend(.fa);
+	&:extend(.fax);
+	width: 1em;
+	margin-right: 0.286em;
+	text-align: center;
+	content: "\f10c";
+}
+
+.fax-input input[type=radio]:checked + label:before {
+	content: "\f192";
+}
+
+.fax-input input[type=checkbox] + label:before {
+	&:extend(.fa);
+	&:extend(.fax);
+	width: 1em;
+	margin-right: 0.286em;
+	text-align: center;
+	content: "\f096";
+}
+
+.fax-input input[type=checkbox]:checked + label:before {
+	content: "\f046";
 }
 
 /* tables */

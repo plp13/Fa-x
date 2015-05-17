@@ -14,12 +14,12 @@
 		<form class="fax-input" style="transition: font-size 0.2s ease-out;">
 		<p>
 			<span class="fax-text">Widget size</span>
-			<label><input type="radio" name="demoSize" value="" checked onClick="document.getElementsByTagName('body')[0].className = '';">normal</label>
-			<label><input type="radio" name="demoSize" value="fa-lg" onClick="document.getElementsByTagName('body')[0].className = 'fa-lg';">large</label>
-			<label><input type="radio" name="demoSize" value="fa-2x" onClick="document.getElementsByTagName('body')[0].className = 'fa-2x';">2x</label>
-			<label><input type="radio" name="demoSize" value="fa-3x" onClick="document.getElementsByTagName('body')[0].className = 'fa-3x';">3x</label>
-			<label><input type="radio" name="demoSize" value="fa-4x" onClick="document.getElementsByTagName('body')[0].className = 'fa-4x';">4x</label>
-			<label><input type="radio" name="demoSize" value="fa-5x" onClick="document.getElementsByTagName('body')[0].className = 'fa-5x';">5x</label>
+			<input type="radio" id="demoSize1" name="demoSize" value="" checked onClick="document.getElementsByTagName('body')[0].className = '';"><label for="demoSize1">normal</label>
+			<input type="radio" id="demoSize2" name="demoSize" value="fa-lg" onClick="document.getElementsByTagName('body')[0].className = 'fa-lg';"><label for="demoSize2">large</label>
+			<input type="radio" id="demoSize3" name="demoSize" value="fa-2x" onClick="document.getElementsByTagName('body')[0].className = 'fa-2x';"><label for="demoSize3">2x</label>
+			<input type="radio" id="demoSize4" name="demoSize" value="fa-3x" onClick="document.getElementsByTagName('body')[0].className = 'fa-3x';"><label for="demoSize4">3x</label>
+			<input type="radio" id="demoSize5" name="demoSize" value="fa-4x" onClick="document.getElementsByTagName('body')[0].className = 'fa-4x';"><label for="demoSize5">4x</label>
+			<input type="radio" id="demoSize6" name="demoSize" value="fa-5x" onClick="document.getElementsByTagName('body')[0].className = 'fa-5x';"><label for="demoSize6">5x</label>
 		</p>
 		</form>
 
@@ -250,13 +250,13 @@
 		</p>
 		<p>
 			<span class="fax-text">Would you like some chocolate?</span>
-			<label><input type="radio" name="chocolate" value="milk">milk chocolate</label>
-			<label><input type="radio" name="chocolate" value="dark">dark chocolate</label>
-			<label><input type="radio" name="chocolate" value="no">no, thanks!</label>
+			<input type="radio" id="chocolate1" name="chocolate" value="milk"><label for="chocolate1">milk chocolate</label>
+			<input type="radio" id="chocolate2" name="chocolate" value="dark"><label for="chocolate2">dark chocolate</label>
+			<input type="radio" id="chocolate3" name="chocolate" value="no"><label for="chocolate3">no, thanks!</label>
 		</p>
 		<p>
 			<span class="fax-text">Our newsletter (A.K.A. SPAM)</span>
-			<label><input type="checkbox" name="spam" value="milk">yes, I want you to fill my mailbox with junk, on a daily basis</label>
+			<input type="checkbox" id="spam" name="spam" value="milk"><label for="spam">yes, I want you to fill my mailbox with junk, on a daily basis</label>
 		</p>
 		</form>
 		<h3>Tables</h3>

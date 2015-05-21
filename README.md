@@ -1,11 +1,8 @@
 Fa-x - Font Awesome Extensions
 ==============================
 
-About Fa-x
-----------
-
-A set of CSS 3 widgets built on top of the excellent FontAwesome icon set.
-Currently provides Icon labels, buttons, toolbars, collapsible menus,
+Fa-x is a set of CSS 3 widgets built on top of the excellent FontAwesome icon
+set. Currently provides Icon labels, buttons, toolbars, collapsible menus,
 horizontal menu bars, form input controls, and tables. The widgets are pure CSS
 and do not require Javascript or Flash.
 
@@ -13,8 +10,9 @@ Requirements
 ------------
 
 Fa-x is built with cross-browser compatibility in mind, and will eventually
-work with all modern browsers. However, during this early development phase, I
-only test it with the latest version of Firefox.
+work with all modern browsers. Support for mobile browsers is also planned.
+However, during this early development phase, I only test it with the latest
+version of Firefox.
 
 To build Fa-x, you need to have installed `lessc` (the Less CSS compiler) and
 GNU `make`.
